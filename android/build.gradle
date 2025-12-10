@@ -2,14 +2,14 @@ group 'com.maru.twitter_login'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.9.25'   // ✅ modern Kotlin version
+    ext.kotlin_version = '1.9.25'
     repositories {
         google()
         mavenCentral()
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:8.2.2"   // ✅ modern AGP version
+        classpath "com.android.tools.build:gradle:8.2.2"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -26,10 +26,10 @@ apply plugin: 'kotlin-android'
 
 android {
     namespace "com.maru.twitter_login"   // ✅ required for AGP 8+
-    compileSdkVersion 34                 // ✅ updated from 31
+    compileSdkVersion 34
 
     defaultConfig {
-        minSdkVersion 21                 // ✅ modern minimum
+        minSdkVersion 21
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -53,5 +53,5 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation "androidx.browser:browser:1.8.0"   // ✅ updated browser dependency
+    implementation "androidx.browser:browser:1.8.0"
 }
